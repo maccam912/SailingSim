@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.2" orientation="orthogonal" renderorder="right-down" width="100" height="100" tilewidth="400" tileheight="400" infinite="1" nextlayerid="2" nextobjectid="1">
+ <tileset firstgid="1" name="watertile" tilewidth="400" tileheight="400" tilecount="1" columns="1">
+  <image source="watertile.png" width="400" height="400"/>
+ </tileset>
+ <tileset firstgid="2" name="outdoor" tilewidth="16" tileheight="16" tilecount="96" columns="16">
+  <image source="../../../Downloads/tileset (1).png" width="256" height="96"/>
+  <wangsets>
+   <wangset name="WaterAndLand" type="mixed" tile="-1">
+    <wangcolor name="Water" color="#ff0000" tile="-1" probability="1"/>
+    <wangcolor name="Land" color="#00ff00" tile="-1" probability="1"/>
+    <wangtile tileid="10" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="11" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="26" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="27" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="48" wangid="1,1,1,2,1,1,1,1"/>
+    <wangtile tileid="49" wangid="1,1,1,2,2,2,1,1"/>
+    <wangtile tileid="50" wangid="1,1,1,1,1,2,1,1"/>
+    <wangtile tileid="51" wangid="1,1,1,1,1,1,1,1"/>
+    <wangtile tileid="64" wangid="1,2,2,2,1,1,1,1"/>
+    <wangtile tileid="65" wangid="2,2,2,2,2,2,2,2"/>
+    <wangtile tileid="66" wangid="1,1,1,1,1,2,2,2"/>
+    <wangtile tileid="67" wangid="2,2,1,1,1,2,2,2"/>
+    <wangtile tileid="68" wangid="2,2,2,2,1,1,1,2"/>
+    <wangtile tileid="80" wangid="1,2,1,1,1,1,1,1"/>
+    <wangtile tileid="81" wangid="2,2,1,1,1,1,1,2"/>
+    <wangtile tileid="82" wangid="1,1,1,1,1,1,1,2"/>
+    <wangtile tileid="83" wangid="1,1,1,2,2,2,2,2"/>
+    <wangtile tileid="84" wangid="1,2,2,2,2,2,1,1"/>
+   </wangset>
+  </wangsets>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="100" height="100">
+  <data encoding="csv">
+   <chunk x="0" y="0" width="16" height="16">
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</chunk>
+  </data>
+ </layer>
+</map>

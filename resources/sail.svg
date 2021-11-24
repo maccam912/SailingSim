@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg9104"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="sail.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview9106"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.622695"
+     inkscape:cx="482.53061"
+     inkscape:cy="736.12109"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs9101" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <ellipse
+       style="fill:#4d4d4d;stroke:#000000;stroke-width:0.264583"
+       id="path9253"
+       cx="100.99844"
+       cy="166.60132"
+       rx="2.5364907"
+       ry="2.6517856"
+       inkscape:export-filename="C:\Users\macca\Documents\SailingSim\resources\sail.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:#4d4d4d;stroke:#000000;stroke-width:0.264583"
+       id="rect9392"
+       width="103.30434"
+       height="1.6141304"
+       x="102.61257"
+       y="165.79425"
+       inkscape:export-filename="C:\Users\macca\Documents\SailingSim\resources\sail.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 100.52143,163.94859 c 0,0 15.57145,-15.89756 47.04044,-16.06061 31.469,-0.16305 58.35503,17.90627 58.35503,17.90627"
+       id="path9507"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="C:\Users\macca\Documents\SailingSim\resources\sail.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 102.43729,164.31545 c 0,0 20.82987,-5.82911 44.2278,-5.66605 23.39793,0.16305 59.25181,7.14485 59.25181,7.14485"
+       id="path9509"
+       sodipodi:nodetypes="csc"
+       inkscape:export-filename="C:\Users\macca\Documents\SailingSim\resources\sail.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       style="fill:#ffffff;stroke:#000000;stroke-width:0.616259"
+       d="m 764.46899,623.27605 c -18.924,-3.6251 -63.17227,-10.66006 -88.43313,-14.05983 -85.30574,-11.481 -134.78801,-13.0443 -195.35403,-6.17183 -27.67074,3.13982 -61.13268,9.03744 -85.30277,15.0345 -4.71821,1.17068 -8.85375,1.95843 -9.19009,1.75056 -0.33634,-0.20787 -1.43469,-0.5463 -2.44077,-0.75207 -1.79625,-0.36737 -1.71384,-0.46665 4.56814,-5.50328 51.26712,-41.10385 130.18676,-60.57354 208.8384,-51.521 54.07137,6.22343 113.81507,26.59148 166.69799,56.83131 4.40625,2.51961 8.27482,4.83147 8.59681,5.13747 0.82199,0.78117 -0.80113,0.62947 -7.98055,-0.74583 z"
+       id="path10038"
+       transform="scale(0.26458333)"
+       inkscape:export-filename="C:\Users\macca\Documents\SailingSim\resources\sail.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+  </g>
+</svg>

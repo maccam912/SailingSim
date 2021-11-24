@@ -1,0 +1,128 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Boat.tscn" type="PackedScene" id=1]
+[ext_resource path="res://resources/ocean3.tmx" type="PackedScene" id=2]
+[ext_resource path="res://resources/windparticle.png" type="Texture" id=3]
+[ext_resource path="res://RacingScene.gd" type="Script" id=4]
+[ext_resource path="res://Buoy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://resources/checkpoint.png" type="Texture" id=6]
+[ext_resource path="res://GUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://TouchControls.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Shark.tscn" type="PackedScene" id=9]
+[ext_resource path="res://resources/watertile.png" type="Texture" id=10]
+
+[node name="RacingScene" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Buoy1" parent="." instance=ExtResource( 5 )]
+position = Vector2( 8358, 772 )
+z_index = 1
+
+[node name="Buoy2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 8340, 6734 )
+z_index = 1
+
+[node name="Buoy3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 3353, 4693 )
+z_index = 1
+
+[node name="Buoy4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 5800, 1947 )
+z_index = 1
+
+[node name="Buoy5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 846, 1010 )
+z_index = 1
+
+[node name="WindParticles" type="CPUParticles2D" parent="."]
+position = Vector2( 501, 276 )
+z_index = 2
+amount = 1500
+lifetime = 2.0
+randomness = 0.2
+lifetime_randomness = 0.2
+local_coords = false
+texture = ExtResource( 3 )
+emission_shape = 2
+emission_rect_extents = Vector2( 2000, 2000 )
+spread = 10.0
+gravity = Vector2( 0, 0 )
+initial_velocity = 50.0
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = -659.0
+margin_top = -1195.0
+margin_right = 10528.0
+margin_bottom = 8446.0
+texture = ExtResource( 10 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LandCollision" type="StaticBody2D" parent="."]
+scale = Vector2( 3, 3 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LandCollision"]
+polygon = PoolVector2Array( 855.667, 358.333, 1794.33, 354.333, 1902, 319.667, 2276.67, 328.333, 2397.33, 281, 2436, 332.667, 2461.67, 470.333, 2470.33, 750.333, 2393, 1039, 2362.67, 1564.33, 2393, 1715, 2505, 1883, 2612.67, 2029.33, 2617, 2090.67, 2575.67, 2127.67, 2478.67, 2127.67, 2386.33, 2086, 2155.67, 1966, 1874, 1790.67, 1551.67, 1616.67, 1431.67, 1588, 1374.67, 1547, 1400, 1468, 1520, 1382.33, 1650, 1278, 1814.33, 1221, 2026.33, 1056.67, 2140.33, 841.333, 2168.67, 724.333, 2175, 613.667, 2130.67, 534.333, 2029.67, 468, 1849.33, 458.667, 1637.33, 436.333, 1412.67, 433.333, 1365, 483.667, 884, 518.667, 555, 521.667, 507.667, 509, 526.667, 430, 634, 382.667 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="LandCollision"]
+polygon = PoolVector2Array( 2831, 1620.67, 2959, 1911.33, 3008, 2081, 3008, 2251, 2941, 2403, 2802.67, 2483.33, 2525.33, 2483.33, 2261.67, 2461, 2083, 2344.67, 1855, 2099, 1672, 1942.67, 1529, 1857.67, 939, 1750.33, 733.333, 1688, 693.333, 1571.67, 715.667, 1473.33, 769.333, 1415.33, 912.333, 1375, 957, 1348.33, 1037.33, 1232, 1104.33, 1133.67, 1292, 1031, 1712, 763, 1712, 763, 1694.33, 695.667, 1627.33, 695.667, 1274.33, 865.667, 849.667, 955, 483.333, 950.667, 197.333, 861, 72, 678, 58.6667, 213.333, 112.333, 150.667, 523.333, 83.6667, 1399.33, 21, 1806, -37, 2427, -19.3333, 2525.33, -64, 2825, -59.3333, 3003.67, 21, 3093, 164, 3128.67, 436.667, 3044, 664.667, 2833.67, 1035.33, 2775.67, 1267.67, 2829.33, 1612, 3423.67, 1504.67, 3397, -180, -97.6667, -126.333, -88.6667, 2704.67, 3401.67, 2698, 3421.67, 1570 )
+
+[node name="ocean3" parent="." instance=ExtResource( 2 )]
+scale = Vector2( 3, 3 )
+z_index = 1
+
+[node name="CheckpointCircle" type="Sprite" parent="."]
+scale = Vector2( 2, 2 )
+texture = ExtResource( 6 )
+
+[node name="Boat" parent="." instance=ExtResource( 1 )]
+position = Vector2( 2404, 587 )
+z_index = 1
+
+[node name="Shark" parent="." instance=ExtResource( 9 )]
+position = Vector2( 3781, 685 )
+
+[node name="Shark2" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8362, 776 )
+rotation_speed = 0.4
+
+[node name="Shark3" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8028, 3879 )
+rotation_speed = 0.4
+
+[node name="Shark4" parent="." instance=ExtResource( 9 )]
+position = Vector2( 8181, 7121 )
+
+[node name="Shark5" parent="." instance=ExtResource( 9 )]
+position = Vector2( 5464, 2546 )
+
+[node name="Shark6" parent="." instance=ExtResource( 9 )]
+position = Vector2( 2822, 1855 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 467, 205 )
+z_index = 1000
+current = true
+zoom = Vector2( 1.5, 1.5 )
+
+[node name="TouchControls" parent="Camera2D" instance=ExtResource( 8 )]
+margin_left = -813.0
+margin_top = -238.0
+margin_right = -813.0
+margin_bottom = -238.0
+rect_scale = Vector2( 1.92852, 1.5545 )
+
+[node name="GUI" parent="Camera2D" instance=ExtResource( 7 )]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -564.0
+margin_top = -414.0
+margin_right = 40.0
+margin_bottom = -14.0
+rect_min_size = Vector2( 500, 400 )
+rect_scale = Vector2( 1.80162, 2.07331 )
+mouse_filter = 2

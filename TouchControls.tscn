@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Theme.tres" type="Theme" id=1]
+[ext_resource path="res://TouchControls.gd" type="Script" id=2]
+
+[node name="TouchControls" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RotateRight" type="Button" parent="."]
+margin_left = 180.0
+margin_top = 271.0
+margin_right = 264.0
+margin_bottom = 325.0
+theme = ExtResource( 1 )
+text = "Right"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RotateLeft" type="Button" parent="."]
+margin_left = 60.0
+margin_top = 271.0
+margin_right = 130.0
+margin_bottom = 325.0
+theme = ExtResource( 1 )
+text = "Left"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_down" from="RotateRight" to="." method="_on_RotateRight_button_down"]
+[connection signal="button_up" from="RotateRight" to="." method="_on_RotateRight_button_up"]
+[connection signal="button_down" from="RotateLeft" to="." method="_on_RotateLeft_button_down"]
+[connection signal="button_up" from="RotateLeft" to="." method="_on_RotateLeft_button_up"]

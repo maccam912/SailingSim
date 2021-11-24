@@ -1,0 +1,22 @@
+[remap]
+
+importer="vnen.tiled_importer"
+type="PackedScene"
+path="res://.import/ocean3.tmx-0ad8a324c513eb4176770a16d7ea7e9d.scn"
+
+[deps]
+
+source_file="res://resources/ocean3.tmx"
+dest_files=[ "res://.import/ocean3.tmx-0ad8a324c513eb4176770a16d7ea7e9d.scn" ]
+
+[params]
+
+custom_properties=true
+tile_metadata=false
+uv_clip=true
+image_flags=0
+collision_layer=1
+embed_internal_images=true
+save_tiled_properties=false
+add_background=true
+post_import_script=""
